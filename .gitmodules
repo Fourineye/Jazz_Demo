@@ -1,0 +1,3 @@
+[submodule "Jazz"]
+	path = Jazz
+	url = git@github.com:Fourineye/Jazz.git
