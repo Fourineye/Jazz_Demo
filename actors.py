@@ -37,9 +37,7 @@ class Upgrade(GameObject):
         )
         sprite._frame = random.randint(0, 4)
         self.add_child(sprite, "sprite")
-        label = Label(
-            pos=(0, -15), text=self.NAMES[self._type], font=jui.DEFAULT_FONT
-        )
+        label = Label(pos=(0, -15), text=self.NAMES[self._type], font=jui.DEFAULT_FONT)
         self.add_child(label)
 
     def update(self, delta):

@@ -139,7 +139,7 @@ class Test(Jazz.Scene):
 
         self.add_object(
             Sprite(
-                asset="./Assets/topdown_shooter/cursors/1crosshair.png",
+                asset="./Assets/1crosshair.png",
                 z=10,
                 screen_layer=True,
             ),
@@ -305,9 +305,7 @@ class Test(Jazz.Scene):
         self.camera.debug = not self.camera.debug
 
     def update_ui(self):
-        pygame.display.set_caption(
-            str(self._object_count) + ":" + str(self.app._clock.get_fps())
-        )
+        pygame.display.set_caption(str(self.app._clock.get_fps()))
         # pygame.display.set_caption(str(self.app._clock.get_fps()))
         if not self.game_over:
             self.hp_bar.update_value(self.player._hp)
